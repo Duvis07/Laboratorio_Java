@@ -9,7 +9,7 @@ public class Principal {
         listaElectrodomesticos[0]=new Electrodomestico("verde", "c", 20.4, 4.5);
         listaElectrodomesticos[1]=new Lavadora(150, 30);
         listaElectrodomesticos[2]=new Television(500, 80, 'E', "negro", 42, false);
-        listaElectrodomesticos[3]=new Electrodomestico( );
+        listaElectrodomesticos[3]=new Electrodomestico(32,3);
         listaElectrodomesticos[4]=new Electrodomestico("amarillo", "a", 2000, 4);
         listaElectrodomesticos[5]=new Lavadora("gris", "F", 2000, 2.4, 6);
         listaElectrodomesticos[6]=new Television(250, 70);

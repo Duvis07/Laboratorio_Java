@@ -1,6 +1,6 @@
 package project3;
 
-public class Television extends Electrodomestico{
+public class Television extends Electrodomestico {
     double resolucion;
     boolean sintonizador_TDT = false;
     public static final double resolucion_Def = 20;
@@ -24,14 +24,16 @@ public class Television extends Electrodomestico{
     public double getResolucion() {
         return resolucion;
     }
-//
-  public double precioFinal(){
-      if(resolucion>40){
-          super.precio_base=precio_base + 30;
-      }else if (sintonizador_TDT){
-          super.precio_base=precio_base + 50;
-      }
 
-      return precioFinal();
-  }
+    //
+    public double precioFinal() {
+        double max = super.precioFinal();
+        if (resolucion > 40) {
+            max += precio_base * 0.3;
+        } else if (sintonizador_TDT) {
+            max += 50;
+        }
+
+        return max;
     }
+}

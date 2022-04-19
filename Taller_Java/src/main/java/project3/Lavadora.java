@@ -1,8 +1,8 @@
 package project3;
 
-public class Lavadora extends Electrodomestico{
+public class Lavadora extends Electrodomestico {
     int carga;
-    public static  final int  carga_def= 5;
+    public static final int carga_def = 5;
 
     public Lavadora() {
 
@@ -21,13 +21,13 @@ public class Lavadora extends Electrodomestico{
     public int getCarga() {
         return carga;
     }
-    public double precioFinal(){
-        if(carga>30){
-            super.precio_base=precio_base + 50;
-        }else  if (carga<29){
-            super.precio_base=precio_base;
-        }
 
-        return precioFinal();
+    public double precioFinal() {
+        double max = super.precioFinal();
+        if (carga > 30) {
+            max += 50;
+
+        }
+        return max;
     }
 }
