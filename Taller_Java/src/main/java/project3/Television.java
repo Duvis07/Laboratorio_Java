@@ -5,7 +5,7 @@ public class Television extends Electrodomestico{
     boolean sintonizador_TDT = false;
     public static final double resolucion_Def = 20;
 
-    public Television() {
+    public Television(int i, int i1, char e, String negro, int i2, boolean b) {
 
     }
 
@@ -24,8 +24,14 @@ public class Television extends Electrodomestico{
     public double getResolucion() {
         return resolucion;
     }
+//
+  public double precioFinal(){
+      if(resolucion>40){
+          super.precio_base=precio_base + 30;
+      }else if (sintonizador_TDT){
+          super.precio_base=precio_base + 50;
+      }
 
-    public boolean isSintonizador_TDT() {
-        return sintonizador_TDT;
+      return precioFinal();
+  }
     }
-}

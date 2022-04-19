@@ -1,11 +1,0 @@
-
-m	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä¤¼é8ùÔæƒ0
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡Çûã
-T
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ãùÔæƒ0
-X	java:S125"<This block of commented-out lines of code should be removed.(Ç¯‚Ô8ôùÔæƒ0
-]	java:S125"<This block of commented-out lines of code should be removed.(îè»Œøÿÿÿÿ8ıùÔæƒ0
-]	java:S125!"<This block of commented-out lines of code should be removed.(çÛõ•ÿÿÿÿÿ8ıùÔæƒ0
-o	java:S100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„öŸÎıÿÿÿÿ8•úÔæƒ0
-C	java:S131F""Add a default case to this switch.(²Ó¹üÿÿÿÿ8¢úÔæƒ0
-j	java:S100S"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èìÏç8²úÔæƒ0

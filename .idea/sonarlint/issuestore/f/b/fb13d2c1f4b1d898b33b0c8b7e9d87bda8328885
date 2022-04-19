@@ -1,0 +1,22 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ§ —8¶Øæõƒ0
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§µM8ºØæõƒ0
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†›8İØæõƒ0
+f
+java:S2583;"DChange this condition so that it does not always evaluate to "false"(Õ’§ğøÿÿÿÿ8úÜæõƒ0
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÁÁÄÖıÿÿÿÿ8†İæõƒ0
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(÷ƒÃ×8†İæõƒ0
+u	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(²À£b8‡İæõƒ0
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‡–àĞ8‰İæõƒ0
+r	java:S116
+"VRename this field "precio_base" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÕš„8Šİæõƒ0
+o	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Ğ³íúÿÿÿÿ8Şæõƒ0
+N
+java:S1172D",Remove this unused method parameter "letra".(Ç§ÍÚûÿÿÿÿ8ÆŞæõƒ0
+G
+java:S1197E"*Move the array designators [] to the type.(û¯„8ÉŞæõƒ0
+H
+java:S1481E"+Remove this unused "letras" local variable.(û¯„8ÍŞæõƒ0
+Q
+java:S1481F"/Remove this unused "encontrado" local variable.(Şß‹şÿÿÿÿ8ÎŞæõƒ0
+>	java:S131O""Add a default case to this switch.(¡ùÉà8ØŞæõƒ0

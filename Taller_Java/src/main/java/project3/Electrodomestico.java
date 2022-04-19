@@ -6,7 +6,7 @@ public class Electrodomestico {
     public static final double precioBase_Def = 100;
     public static final double peso_Def = 5;
     String color;
-    String consumoEnergetico;
+    String consumoEnergetico ="A";
     double precio_base;
     double peso;
 
@@ -65,11 +65,23 @@ public class Electrodomestico {
 
         }
     }
+
     public void comprobarConsumoEnergetico(char letra) {
-        char letras[] = {'A', 'B', 'C', 'D', 'E', 'F'};
-        boolean encontrado = false;
-
-
+        if (consumoEnergetico == "F") {
+            consumoEnergetico = "F";
+        } else if (consumoEnergetico == "A") {
+            consumoEnergetico = "A";
+        } else if (consumoEnergetico == "B") {
+            consumoEnergetico = "B";
+        } else if (consumoEnergetico == "C") {
+            consumoEnergetico = "C";
+        } else if (consumoEnergetico == "D") {
+            consumoEnergetico = "D";
+        } else if (consumoEnergetico == "E") {
+            consumoEnergetico = "E";
+        } else {
+            consumoEnergetico = "F";
+        }
 
     }
 

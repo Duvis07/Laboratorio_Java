@@ -47,7 +47,7 @@ public class Ejercicio_8 {
                 break;
 
             default:
-                System.out.println("Error no ingresaste el dia de forma correcta");
+                System.out.println("Error no ingresaste el dia de forma correcta ");
 
 
         }
