@@ -1,4 +1,4 @@
-package project3;
+package com.sofka.project1.project3;
 
 public class Principal {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.sofka.project2;
+package com.sofka.project1.project2;
 
 public class Persona {
     private String nombre;

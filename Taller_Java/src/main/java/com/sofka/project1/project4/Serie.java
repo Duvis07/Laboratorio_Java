@@ -1,4 +1,4 @@
-package project4;
+package com.sofka.project1.project4;
 
 /**
  * Esta es una super clase que permite
@@ -92,7 +92,7 @@ public class Serie implements IEntregable {
 
     @Override
     public void entregar() {
-        entregado = true;
+
     }
 
     @Override
@@ -109,4 +109,20 @@ public class Serie implements IEntregable {
     public void compareTo(Object a) {
 
     }
+
+    public int calcularTemporada(Serie series[]) {
+        int temporadas = 0;
+        int posicion = 0;
+        for (int i = 0; i < series.length; i++)
+            if (series[i].numeroTemporadas > temporadas) {
+                posicion = i;
+                temporadas = series[i].numeroTemporadas;
+            }
+        System.out.println("La serie con mayor numero de temporadas es: ");
+        System.out.println(series[posicion].titulo + " con: " + series[posicion].numeroTemporadas + " temporadas");
+
+        return temporadas;
+    }
+
 }
+

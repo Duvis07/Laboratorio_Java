@@ -1,12 +1,12 @@
-package project4;
+package com.sofka.project1.project4;
 
-public class Videojuego implements IEntregable  {
+public class Videojuego implements IEntregable {
     String titulo;
     boolean entregado = false;
     String compania;
     int horasEstimadas;
     String genero;
-    public static  final  int horasEstimadas_Def=10;
+    public static final int horasEstimadas_Def = 10;
 
     public Videojuego() {
     }
@@ -56,24 +56,13 @@ public class Videojuego implements IEntregable  {
     }
 
     @Override
-    public String toString() {
-        return "Videojuego{" +
-                "titulo='" + titulo + '\'' +
-                ", entregado=" + entregado +
-                ", compania='" + compania + '\'' +
-                ", horasEstimadas=" + horasEstimadas +
-                ", genero='" + genero + '\'' +
-                '}';
-    }
-
-    @Override
     public void entregar() {
-   entregado=true;
+        entregado = true;
     }
 
     @Override
     public void devolver() {
-entregado=false;
+        entregado = false;
     }
 
     @Override
@@ -85,5 +74,30 @@ entregado=false;
     @Override
     public void compareTo(Object a) {
 
+    }
+
+    public int calcularHoras(Videojuego juego[]) {
+        int horas = 0;
+        int posicion = 0;
+        for (int i = 0; i < juego.length; i++)
+            if (juego[i].horasEstimadas > horas) {
+                posicion = i;
+                horas = juego[i].horasEstimadas;
+            }
+        System.out.println("El Videojuego con más horas estimadas es: ");
+        System.out.println(juego[posicion].titulo + " con: " + juego[posicion].horasEstimadas + " horas estimadas");
+
+        return horas;
+    }
+
+    @Override
+    public String toString() {
+        return "Videojuego{" +
+                "titulo='" + titulo + '\'' +
+                ", entregado=" + entregado +
+                ", compania='" + compania + '\'' +
+                ", horasEstimadas=" + horasEstimadas +
+                ", genero='" + genero + '\'' +
+                '}';
     }
 }

@@ -1,4 +1,4 @@
-package project4;
+package com.sofka.project1.project4;
 
 public interface IEntregable {
 

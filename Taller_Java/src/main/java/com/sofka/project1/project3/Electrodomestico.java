@@ -1,4 +1,4 @@
-package project3;
+package com.sofka.project1.project3;
 
 public class Electrodomestico {
     public static final String color_Def = "Blanco";
