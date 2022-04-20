@@ -1,46 +1,81 @@
 package com.sofka.project1.project3;
 
+import static javafx.scene.input.KeyCode.F;
+
+/**
+ * Esta clase contiene  atributos que son precio base, color, consumo energético, peso
+ * Los constructores que se implementarán serán:
+ * Un constructor por defecto.
+ * Un constructor con el precio y peso.
+ * Un constructor con todos los atributo
+ * Los métodos que implementara serán:comprobarConsumoEnergetico(char letra),comprobarColor(String color)
+ * precioFinal()
+ *
+ * @author Duvan Botero
+ */
+
 public class Electrodomestico {
     public static final String color_Def = "Blanco";
-    public static final String consumoEnergetico_Def = "F";
+    public static final char consumoEnergetico_Def = 'F';
     public static final double precioBase_Def = 100;
     public static final double peso_Def = 5;
     String color;
-    String consumoEnergetico ="A";
-    double precio_base;
+   char consumoEnergetico ;
+    double precioBase;
     double peso;
 
-    //constructor por defecto
+    /**
+     * Un constructor por defecto.
+     */
     public Electrodomestico() {
+
     }
 
-    //constructor con precioBase y el peso
-    public Electrodomestico(double precio_base, double peso) {
-        this.precio_base = precio_base;
+    /**
+     * Un constructor con el precio y peso
+     *
+     * @param precioBase
+     * @param peso
+     */
+    public Electrodomestico(double precioBase, double peso) {
+        this.precioBase = precioBase;
         this.peso = peso;
     }
 
-    //Un constructor con todos los atributos.
-    public Electrodomestico(String color, String consumoEnergetico, double precio_base, double peso) {
+    /**
+     * Un constructor con todos los atributos.
+     *
+     * @param color
+     * @param consumoEnergetico
+     * @param precioBase
+     * @param peso
+     */
+
+    public Electrodomestico(String color, char consumoEnergetico, double precioBase, double peso) {
         this.color = color;
         this.consumoEnergetico = consumoEnergetico;
-        this.precio_base = precio_base;
+        this.precioBase = precioBase;
         this.peso = peso;
 
     }
 
+    /**
+     * Métodos get de todos los atributos.
+     *
+     * @return
+     */
     public String getColor() {
         return color;
     }
 
 
-    public String getConsumoEnergetico() {
+    public char getConsumoEnergetico() {
         return consumoEnergetico;
     }
 
 
-    public double getPrecio_base() {
-        return precio_base;
+    public double getPrecioBase() {
+        return precioBase;
     }
 
 
@@ -48,7 +83,11 @@ public class Electrodomestico {
         return peso;
     }
 
-
+    /**
+     * comprueba que el color es correcto, sino lo es usa el color por defecto
+     *
+     * @param color
+     */
     public void comprobarColor(String color) {
         String[] colores = {"blancos", "negro", "rojo", "azul", "gris"};
         boolean encontrado = false;
@@ -66,45 +105,54 @@ public class Electrodomestico {
         }
     }
 
-    public void comprobarConsumoEnergetico(char letra) {
-        if (consumoEnergetico == "F") {
-            consumoEnergetico = "F";
-        } else if (consumoEnergetico == "A") {
-            consumoEnergetico = "A";
-        } else if (consumoEnergetico == "B") {
-            consumoEnergetico = "B";
-        } else if (consumoEnergetico == "C") {
-            consumoEnergetico = "C";
-        } else if (consumoEnergetico == "D") {
-            consumoEnergetico = "D";
-        } else if (consumoEnergetico == "E") {
-            consumoEnergetico = "E";
+    /**
+     * comprueba que la letra es correcta, sino es correcta usara la letra por defecto
+     *
+     * @param letra
+     */
+   private void comprobarConsumoEnergetico(char letra) {
+        if (consumoEnergetico =='F') {
+            consumoEnergetico = 'F';
+        } else if (consumoEnergetico == 'A') {
+            consumoEnergetico = 'A';
+        } else if (consumoEnergetico == 'B') {
+            consumoEnergetico = 'B';
+        } else if (consumoEnergetico == 'C') {
+            consumoEnergetico = 'C';
+        } else if (consumoEnergetico == 'D') {
+            consumoEnergetico = 'D';
+        } else if (consumoEnergetico == 'E') {
+            consumoEnergetico = 'E';
         } else {
-            consumoEnergetico = "F";
+            consumoEnergetico = 'F';
         }
 
     }
 
-
+    /**
+     * según el consumo energético, aumentara su precio, y según su tamaño, también
+     *
+     * @return
+     */
     public double precioFinal() {
         double max = 0;
         switch (consumoEnergetico) {
-            case "A":
+            case 'A':
                 max += 100;
                 break;
-            case "B":
+            case 'B':
                 max += 80;
                 break;
-            case "C":
+            case 'C':
                 max += 60;
                 break;
-            case "D":
+            case 'D':
                 max += 50;
                 break;
-            case "E":
+            case 'E':
                 max += 30;
                 break;
-            case "F":
+            case 'F':
                 max += 10;
                 break;
         }
@@ -119,7 +167,7 @@ public class Electrodomestico {
             max += 100;
         }
 
-        return precio_base + max;
+        return precioBase + max;
     }
 
 }

@@ -2,15 +2,21 @@ package com.sofka.project1;
 
 import java.util.Scanner;
 
+/**
+ * Crea una aplicación por consola que nos pida un día de la
+ * semana y mediante un switch case que nos diga si es un día laboral o no.
+ *
+ * @autor Duvan Botero
+ */
+
 public class Ejercicio_8 {
     public static void main(String[] args) {
-        Integer dia;
-
+        int dia;
         Scanner leer = new Scanner(System.in);
-
+        System.out.println("<<<Bienvenido al programa>>>");
         System.out.println("Por favor ingresa el  dia que quieres consultar");
         System.out.println(
-                        "1 :Lunes\n" +
+                "1:Lunes\n" +
                         "2:Martes\n" +
                         "3:Miercoles\n" +
                         "4:Jueves\n" +
@@ -19,7 +25,6 @@ public class Ejercicio_8 {
                         "7:Domingo\n" +
                         "8:Salir del programa\n");
         dia = leer.nextInt();
-
         switch (dia) {
             case 1:
                 System.out.println("El dia lunes es de trabajo laboral");

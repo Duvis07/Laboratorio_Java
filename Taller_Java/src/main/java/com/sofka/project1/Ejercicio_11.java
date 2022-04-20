@@ -2,10 +2,17 @@ package com.sofka.project1;
 
 import java.util.Scanner;
 
+/**
+ * un algoritmo que permite de acuerdo a una frase pasada por consola,
+ * indicar cual es la longitud de una frase, adicionalmente cuantas vocales tiene de “a,e,i,o,u”.
+ *
+ * @author Duvan Botero
+ */
+
 public class Ejercicio_11 {
     public static void main(String[] args) {
-        Integer contador = 0;
-        Integer contadorA = 0, contadorE = 0, contadorI = 0, contadorO = 0, contadorU = 0;
+        int contador = 0;
+        int contadorA = 0, contadorE = 0, contadorI = 0, contadorO = 0, contadorU = 0;
 
         Scanner leer = new Scanner(System.in);
 

@@ -1,0 +1,6 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ó¤Çóüÿÿÿÿ
+w
+java:S4165"aRemove this useless assignment; "num" already holds the assigned value along all execution paths.(˜Ò•è
+E
+java:S1656"/Remove or correct this useless self-assignment.(˜Ò•è

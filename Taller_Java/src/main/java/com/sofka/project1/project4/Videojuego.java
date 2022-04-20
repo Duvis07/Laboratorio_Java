@@ -1,21 +1,57 @@
 package com.sofka.project1.project4;
 
+/**
+ * Esta clase cuenta con atributos como titulo, horas estimadas, entregado, genero y compañia.
+ * Tendra un Un constructor por defecto.
+ * Un constructor con el titulo y horas estimadas. El resto por defecto.
+ * Un constructor con todos los atributos
+ * Métodos get de todos los atributos
+ * Métodos set de todos los atributos
+ * el método toString.
+ * Metodo calcularHoras(Videojuego juego[])
+ *
+ * @author Duvan Botero
+ */
+
 public class Videojuego implements IEntregable {
+    public final static int mayor = 1;
+    public final static int menor = -1;
+    public final static int igual = 0;
     String titulo;
-    boolean entregado = false;
+    public boolean entregado;
     String compania;
     int horasEstimadas;
     String genero;
-    public static final int horasEstimadas_Def = 10;
+
+    /**
+     *  Un constructor por defecto.
+     */
 
     public Videojuego() {
+        this.horasEstimadas = 10;
+        this.entregado = false;
     }
 
+    /**
+     *  Un constructor con el titulo y horas estimadas como parametro
+     * @param titulo
+     * @param horasEstimadas
+     */
     public Videojuego(String titulo, int horasEstimadas) {
         this.titulo = titulo;
         this.horasEstimadas = horasEstimadas;
+        this.entregado = false;
+        this.compania = "android";
+        this.genero = "demo";
     }
 
+    /**
+     * Un constructor con todos los atributos como parametro
+     * @param titulo
+     * @param compania
+     * @param horasEstimadas
+     * @param genero
+     */
     public Videojuego(String titulo, String compania, int horasEstimadas, String genero) {
         this.titulo = titulo;
         this.compania = compania;
@@ -23,6 +59,11 @@ public class Videojuego implements IEntregable {
         this.genero = genero;
     }
 
+    /**
+     * Métodos get de todos los atributos
+     * Métodos set de todos los atributos
+     * @return
+     */
     public String getTitulo() {
         return titulo;
     }
@@ -57,24 +98,59 @@ public class Videojuego implements IEntregable {
 
     @Override
     public void entregar() {
-        entregado = true;
+        this.entregado = true;
     }
 
     @Override
     public void devolver() {
-        entregado = false;
+        this.entregado = false;
     }
 
     @Override
-    public void isEntregado() {
-        System.out.println(entregado);
+    public boolean isEntregado() {
 
+        return this.entregado;
     }
-
+    /**
+     * Compara dos videojuegos segun el numero de horasEstimadas
+     * @return codigo numerico
+     * <ul>
+     * <li>1: El videojuego 1 es mayor que el videojuego 2</li>
+     * <li>0: Los videojuegos son iguales</li>
+     * <li>-1: El videojuego 1 es menor que el videojuego 2</li></ul>
+     */
     @Override
-    public void compareTo(Object a) {
+    public int compareTo(Object a) {
+        int estado=menor;
+
+        Videojuego ref=(Videojuego)a;
+        if (horasEstimadas>ref.getHorasEstimadas()){
+            estado=mayor;
+        }else if(horasEstimadas==ref.getHorasEstimadas()){
+            estado=igual;
+        }
+
+        return estado;
+
 
     }
+    /**
+     * Indica si dos videojuegos son iguales, siendo el titulo y compañia iguales
+     * @param a videojuego a comparar
+     * @return true si son iguales y false si son distintos
+     */
+    public boolean equals(Videojuego a){
+        if (titulo.equalsIgnoreCase(a.getTitulo()) && compania.equalsIgnoreCase(a.getCompania())){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Metodo que calcula el video juego con mas horas estimadas
+     * @param juego
+     * @return
+     */
 
     public int calcularHoras(Videojuego juego[]) {
         int horas = 0;
@@ -84,20 +160,24 @@ public class Videojuego implements IEntregable {
                 posicion = i;
                 horas = juego[i].horasEstimadas;
             }
-        System.out.println("El Videojuego con más horas estimadas es: ");
-        System.out.println(juego[posicion].titulo + " con: " + juego[posicion].horasEstimadas + " horas estimadas");
+        System.out.println("El video juego con mas horas estimadas es:\n "
+                + juego[posicion].toString());
 
         return horas;
     }
 
+    /**
+     * Metodo que muestra la informacion del video juego
+     * @return
+     */
     @Override
     public String toString() {
-        return "Videojuego{" +
-                "titulo='" + titulo + '\'' +
-                ", entregado=" + entregado +
-                ", compania='" + compania + '\'' +
-                ", horasEstimadas=" + horasEstimadas +
-                ", genero='" + genero + '\'' +
-                '}';
+        return "Informacion del video juego:\n"
+                + "Titulo: " + titulo + "\n"
+                + "Entregado: " + entregado + "\n"
+                + "Compañia: " + compania + "\n"
+                + "Horas_Estimadas: " + horasEstimadas + "\n"
+                + "Genero: " + genero + " \n";
+
     }
 }

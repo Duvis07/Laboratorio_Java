@@ -2,11 +2,20 @@ package com.sofka.project1;
 
 import java.util.Scanner;
 
+/**
+ * programa que muestre un menú de opciones
+ * el sistema solo va a salir cuando se digite el numero 8
+ * mientras se digite una de las cinco opciones debe seguir mostrado el menu
+ * * si el usuario digita un numero que no esta en el menu se debe arrojar un mensaje de error
+ *
+ * @author Duvan Botero
+ */
+
 public class Ejercicio_15 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Integer select = -1;
+        int select = -1;
 
         System.out.println("****** GESTION CINEMATOGRAFICA ********");
         while (select != 8) {

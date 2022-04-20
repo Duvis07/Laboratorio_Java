@@ -1,5 +1,11 @@
 package com.sofka.project1;
 
+/**
+ * Muestra los números impares y pares del 1 al 100 con el ciclo for
+ *
+ * @autor Duvan Botero
+ */
+
 public class Ejercicio_6 {
     public static void main(String[] args) {
 

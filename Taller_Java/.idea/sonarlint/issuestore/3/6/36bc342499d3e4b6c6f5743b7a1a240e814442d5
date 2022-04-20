@@ -1,0 +1,18 @@
+
+k
+java:S1104"UMake entregado a static final constant or non-public and provide accessors if needed.(Ô®£Ñ
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(È…ôüÿÿÿÿ8ÅÊê¹„0
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(×Óî¥8ÅÊê¹„0
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ü—ı£üÿÿÿÿ8ÆÊê¹„0
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(È…ôüÿÿÿÿ8ÓÊê¹„0
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(×Óî¥8ÕÊê¹„0
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ü—ı£üÿÿÿÿ8ÖÊê¹„0
+x
+java:S1201"UEither override Object.equals(Object), or rename the method to prevent any confusion.(ìßô¼ûÿÿÿÿ8Çø¹„0
+d
+java:S1126"AReplace this if-then-else statement by a single return statement.(¸–¹ÿùÿÿÿÿ8Èø¹„0
+M
+java:S1197›"*Move the array designators [] to the type.(ÍšµÁıÿÿÿÿ8ÜÃï¹„0

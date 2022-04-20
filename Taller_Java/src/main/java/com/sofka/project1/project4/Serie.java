@@ -1,28 +1,39 @@
 package com.sofka.project1.project4;
 
 /**
- * Esta es una super clase que permite
+ * Esta clase contara con atributos como título, numero de temporadas, entregado, género y creador.
+ * Los constructores que se implementarán serán:
+ * Un constructor por defecto.
+ * Un constructor con el titulo y creador. El resto por defecto.
+ * Un constructor con todos los atributos, excepto de entregado
+ * Métodos set de todos los atributos, excepto de entregado.
+ * Los métodos toString.
+ * Metod calcularTemporada(Serie series[])
  *
  * @author Duvan Botero, duvanarleybotero@gmail.com
  * @version 1.0.0
  */
 public class Serie implements IEntregable {
+    public final static int mayor = 1;
+    public final static int menor = -1;
+    public final static int igual = 0;
     String titulo;
     int numeroTemporadas;
-    boolean entregado = false;
+    public boolean entregado;
     String genero;
     String creador;
-    public static final int Temporadas_def = 3;
+
 
     /**
      * definicion  de un constructor por defecto
      */
     public Serie() {
-
+        this.numeroTemporadas = 3;
+        this.entregado = false;
     }
 
     /**
-     * Este es un metodo constructor que recibe 2 atributos como parametro
+     * Un constructor con el titulo y creador como parametro
      *
      * @param titulo
      * @param creador
@@ -30,10 +41,13 @@ public class Serie implements IEntregable {
     public Serie(String titulo, String creador) {
         this.titulo = titulo;
         this.creador = creador;
+        this.entregado = false;
+        this.numeroTemporadas = 3;
+        this.genero = "Miedo";
     }
 
     /**
-     * Este es un metodo constructor que recibe 4 atributos como parametro
+     * Un constructor con todos los atributos como parametro
      *
      * @param titulo
      * @param numeroTemporadas
@@ -44,12 +58,14 @@ public class Serie implements IEntregable {
         this.titulo = titulo;
         this.numeroTemporadas = numeroTemporadas;
         this.genero = genero;
-        this.genero = creador;
+        this.creador = creador;
     }
+
 
     public String getCreador() {
         return creador;
     }
+
 
     public void setCreador(String creador) {
         this.creador = creador;
@@ -79,36 +95,66 @@ public class Serie implements IEntregable {
         this.titulo = titulo;
     }
 
-    @Override
-    public String toString() {
-        return "Serie{" +
-                "titulo='" + titulo + '\'' +
-                ", numeroTemporadas=" + numeroTemporadas +
-                ", entregado=" + entregado +
-                ", genero='" + genero + '\'' +
-                ", creador='" + creador + '\'' +
-                '}';
-    }
 
     @Override
     public void entregar() {
-
+        this.entregado = true;
     }
 
     @Override
     public void devolver() {
-        entregado = false;
+        this.entregado = false;
     }
 
     @Override
-    public void isEntregado() {
-        System.out.println(entregado);
+    public boolean isEntregado() {
+        return this.entregado;
     }
 
+    /**
+     * * Compara dos series segun su numero de temporadas
+     *  <ul>
+     * <li>1: La Serie 1 es mayor que la Serie 2</li>
+     * <li>0: Las Series son iguales</li>
+     *   <li>-1: La Serie 1 es menor que la Serie 2</li></ul>
+     *
+     * @param
+     * @return
+     */
     @Override
-    public void compareTo(Object a) {
+    public int compareTo(Object a) {
+        int estado = menor;
+
+        Serie ref = (Serie) a;
+        if (numeroTemporadas > ref.getNumeroTemporadas()) {
+            estado = mayor;
+        } else if (numeroTemporadas == ref.getNumeroTemporadas()) {
+            estado = igual;
+        }
+
+        return estado;
 
     }
+
+    /**
+     * Indica si dos Series son iguales, siendo el titulo y creador iguales
+     *
+     * @param a Serie a comparar
+     * @return true si son iguales y false si son distintos
+     */
+    public boolean equals(Serie a) {
+        if (titulo.equalsIgnoreCase(a.getTitulo()) && creador.equalsIgnoreCase(a.getCreador())) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Metodo para calcular la serie con mayor numero temporadas
+     *
+     * @param series
+     * @return
+     */
 
     public int calcularTemporada(Serie series[]) {
         int temporadas = 0;
@@ -118,11 +164,28 @@ public class Serie implements IEntregable {
                 posicion = i;
                 temporadas = series[i].numeroTemporadas;
             }
-        System.out.println("La serie con mayor numero de temporadas es: ");
-        System.out.println(series[posicion].titulo + " con: " + series[posicion].numeroTemporadas + " temporadas");
+        System.out.println("La serie con mayor numero de temporadas es:\n "
+                + series[posicion].toString());
 
         return temporadas;
     }
 
+    /**
+     * Metodo toString que muestra la informacion de la serie
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Informacion de la serie:\n"
+                + "Titulo: " + titulo + "\n"
+                + "Numero_Temporadas: " + numeroTemporadas + "\n"
+                + "Entregado: " + entregado + "\n"
+                + "Genero: " + genero + "\n"
+                + "Creador: " + creador + " \n";
+
+
+    }
 }
+
 

@@ -1,0 +1,4 @@
+
+f	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä¤¼é
+<	java:S131F""Add a default case to this switch.(²Ó¹üÿÿÿÿ
+h	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—äÓÿýÿÿÿÿ
