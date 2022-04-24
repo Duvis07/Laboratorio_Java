@@ -1,0 +1,16 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÎË¶¹8ëÌŸß…0
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(·ã¡‘þÿÿÿÿ
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(“´…£
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(´µ‹³
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(­ÙÒÞýÿÿÿÿ
+h	java:S116"NRename this field "DNI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èüöšýÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(·ã¡‘þÿÿÿÿ
+h	java:S100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ûá±øÿÿÿÿ
+D
+java:S2140Z")Use "java.util.Random.nextInt()" instead.( £¾‹øÿÿÿÿ
+@
+java:S1197h"*Move the array designators [] to the type.(ì§­¼
+T
+java:S1117š"8Rename "sexo" which hides the field declared at line 19.(½ÞÀªúÿÿÿÿ
