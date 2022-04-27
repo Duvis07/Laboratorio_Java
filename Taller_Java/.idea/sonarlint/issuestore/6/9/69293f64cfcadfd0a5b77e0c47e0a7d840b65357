@@ -1,5 +1,5 @@
 
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†›8ó¦ß…0
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†›
 _
 java:S2583b"DChange this condition so that it does not always evaluate to "false"(Õ’§ğøÿÿÿÿ
 t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÁÁÄÖıÿÿÿÿ
@@ -9,7 +9,7 @@ o	java:S115"ZRename this constant name to match the regular expression '^[A-Z
 B
 java:S1172q",Remove this unused method parameter "letra".(ÂŸô‹
 8	java:S131‹""Add a default case to this switch.(¡ùÉà
-[
-java:S1128"9Remove this unused import 'javafx.scene.input.KeyCode.F'.(ƒüÍÿÿÿÿÿ8ÿ¿â§„0
-\
-java:S1144q"?Remove this unused private "comprobarConsumoEnergetico" method.(ÂŸô‹8ŠŠ•·„0
+T
+java:S1128"9Remove this unused import 'javafx.scene.input.KeyCode.F'.(ƒüÍÿÿÿÿÿ
+U
+java:S1144q"?Remove this unused private "comprobarConsumoEnergetico" method.(ÂŸô‹

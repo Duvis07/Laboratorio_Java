@@ -30,9 +30,9 @@ public class Ejercicio_12 {
             if (palabra1.equalsIgnoreCase(palabra2)) {
                 System.out.println("la palabra " + palabra1 + " y la palabra " + palabra2 + " son iguales en longitud");
             } else {
-                for (int i = 0; i < palabra1.length(); i++) {
-                    if (palabra1.charAt(i) != palabra2.charAt(i)) {
-                        System.out.println("Las palabras no son iguales en la posicion " + i);
+                for (Integer index = 0; index < palabra1.length(); index++) {
+                    if (palabra1.charAt(index) != palabra2.charAt(index)) {
+                        System.out.println("Las palabras no son iguales en la posicion " + index);
                     }
                 }
             }

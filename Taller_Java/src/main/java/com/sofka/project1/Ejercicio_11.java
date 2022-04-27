@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 /**
  * un algoritmo que permite de acuerdo a una frase pasada por consola,
- * indicar cual es la longitud de una frase, adicionalmente cuantas vocales tiene de “a,e,i,o,u”.
+ * indicar cual es la longitud de una frase, adicionalmente cuantas vocales tiene de “a,e,i,o,u”
  *
  * @author Duvan Botero
  */
 
 public class Ejercicio_11 {
     public static void main(String[] args) {
-        int contador = 0;
-        int contadorA = 0, contadorE = 0, contadorI = 0, contadorO = 0, contadorU = 0;
+
+        Integer contadorA = 0, contadorE = 0, contadorI = 0, contadorO = 0, contadorU = 0;
 
         Scanner leer = new Scanner(System.in);
 
@@ -21,16 +21,16 @@ public class Ejercicio_11 {
         System.out.println("Por favor ingresa una palabra");
         String palabra = leer.nextLine();
 
-        for (int i = 0; i < palabra.length(); i++) {
-            if ((palabra.charAt(i) == 'a')) {
+        for (Integer index = 0; index < palabra.length(); index++) {
+            if ((palabra.charAt(index) == 'a')) {
                 contadorA++;
-            } else if ((palabra.charAt(i) == 'e')) {
+            } else if ((palabra.charAt(index) == 'e')) {
                 contadorE++;
-            } else if ((palabra.charAt(i) == 'i')) {
+            } else if ((palabra.charAt(index) == 'i')) {
                 contadorI++;
-            } else if ((palabra.charAt(i) == 'o')) {
+            } else if ((palabra.charAt(index) == 'o')) {
                 contadorO++;
-            } else if ((palabra.charAt(i) == 'u')) {
+            } else if ((palabra.charAt(index) == 'u')) {
                 contadorU++;
             }
 

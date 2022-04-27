@@ -20,7 +20,7 @@ public class Videojuego implements IEntregable {
     String titulo;
     public boolean entregado;
     String compania;
-    int horasEstimadas;
+   Integer horasEstimadas;
     String genero;
 
     /**

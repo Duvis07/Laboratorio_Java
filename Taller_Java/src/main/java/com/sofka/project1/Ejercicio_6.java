@@ -8,12 +8,13 @@ package com.sofka.project1;
 
 public class Ejercicio_6 {
     public static void main(String[] args) {
+        System.out.println("<<<Bienvenido al Programa>>>");
 
-        for (int i = 1; i <= 100; i++) {
-            if (i % 2 == 0) {
-                System.out.println("El numero " + i + " es par");
-            } else if (i % 2 != 0)
-                System.out.println("El numero " + i + " es impar");
+        for (Integer index = 1; index <= 100; index++) {
+            if (index % 2 == 0) {
+                System.out.println("El numero " + index + " es par");
+            } else if (index % 2 != 0)
+                System.out.println("El numero " + index + " es impar");
 
 
         }

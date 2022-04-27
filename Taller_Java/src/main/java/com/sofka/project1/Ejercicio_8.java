@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Ejercicio_8 {
     public static void main(String[] args) {
-        int dia;
+        Integer dia;
         Scanner leer = new Scanner(System.in);
         System.out.println("<<<Bienvenido al programa>>>");
         System.out.println("Por favor ingresa el  dia que quieres consultar");
@@ -42,7 +42,7 @@ public class Ejercicio_8 {
                 System.out.println("El dia viernes es de trabajo laboral");
                 break;
             case 6:
-                System.out.println("El dia sabado es de trabajo laboral");
+                System.out.println("El dia sabado es de descanso");
                 break;
             case 7:
                 System.out.println("El dia domingo es de descanso");

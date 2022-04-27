@@ -11,6 +11,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Ejercicio_13 {
     public static void main(String[] args) {
+        System.out.println("<<Bienvenido al programa>>");
 
         DateTimeFormatter date1 = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         System.out.println("(AAAA/MM/DD) (HH:MM:SS)-> " + date1.format(LocalDateTime.now()));

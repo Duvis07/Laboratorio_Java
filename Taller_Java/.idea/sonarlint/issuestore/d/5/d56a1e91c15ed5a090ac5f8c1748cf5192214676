@@ -1,4 +1,8 @@
 
 f	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃµèŸ
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†›8Ü¢§ß…0
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†›
 u	java:S116"[Rename this field "sintonizador_TDT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²€êşúÿÿÿÿ
+P
+java:S1161G":Add the "@Override" annotation above this method signature(ó‘ä¸
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ßå´¡ûÿÿÿÿ

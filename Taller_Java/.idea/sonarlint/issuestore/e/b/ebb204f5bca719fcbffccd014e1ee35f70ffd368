@@ -1,5 +1,7 @@
 
 g	java:S101
 "MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ßÑžþûÿÿÿÿ
+W
+java:S4973"<Strings and Boxed types should be compared using "equals()".(²šÖýÿÿÿÿ
 R
 java:S2589"7Remove this expression which always evaluates to "true"(²šÖýÿÿÿÿ

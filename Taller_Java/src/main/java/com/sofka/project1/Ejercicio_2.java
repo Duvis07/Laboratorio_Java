@@ -14,9 +14,9 @@ public class Ejercicio_2 {
         Scanner leer = new Scanner(System.in);
         System.out.println("---Bienvenido al programa---");
         System.out.println("Por favor ingresa primer numero:");
-        int num1 = leer.nextInt();
+        Integer num1 = leer.nextInt();
         System.out.println("Por favor ingresa el segundo numero:");
-        int num2 = leer.nextInt();
+        Integer num2 = leer.nextInt();
 
         if (num1 > num2) {
             System.out.println("El primer numero es el mayor: " + num1);

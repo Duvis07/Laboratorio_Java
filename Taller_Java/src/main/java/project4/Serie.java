@@ -18,7 +18,7 @@ public class Serie implements IEntregable {
     public final static int menor = -1;
     public final static int igual = 0;
     String titulo;
-    int numeroTemporadas;
+    Integer numeroTemporadas;
     public boolean entregado;
     String genero;
     String creador;

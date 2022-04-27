@@ -15,7 +15,7 @@ public class Ejercicio_15 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int select = -1;
+        Integer select = -1;
 
         System.out.println("****** GESTION CINEMATOGRAFICA ********");
         while (select != 8) {

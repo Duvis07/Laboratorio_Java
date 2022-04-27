@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Ejercicio_7 {
     public static void main(String[] args) {
-        int num;
+       Integer num;
         Scanner leer = new Scanner(System.in);
         System.out.println("<<<Bienvenido al programa>>>");
         System.out.println("Por favor ingrese un numero mayor a cero");

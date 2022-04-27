@@ -15,8 +15,8 @@ public class Ejercicio_3 {
         System.out.println("--Bienvenido al programa----");
 
         final double PI = 3.141;
-        double area;
-        double radio;
+        Double area;
+        Double radio;
         BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
         String entrada;
         System.out.println("Escribe el valor del radio: ");

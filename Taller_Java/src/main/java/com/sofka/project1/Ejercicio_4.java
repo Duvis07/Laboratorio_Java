@@ -15,9 +15,9 @@ public class Ejercicio_4 {
         System.out.println("Por favor ingresa el nombre de un producto");
         String nombreProducto = leer.nextLine();
         System.out.println("Por favor ingresa el precio del producto");
-        double precioInicial = leer.nextDouble();
-        double calcularIva = precioInicial * iva;
-        double precioFinal = precioInicial + calcularIva;
+        Double precioInicial = leer.nextDouble();
+        Double calcularIva = precioInicial * iva;
+        Double precioFinal = precioInicial + calcularIva;
 
         System.out.println("El " + nombreProducto + " tiene un Iva de: " + calcularIva +
                 " y un precio total de " + precioFinal + " pesos"

@@ -13,8 +13,8 @@ package Project2;
 
 public class Persona {
     private String nombre;
-    private int edad;
-    private double peso;
+    private Integer edad;
+    private Double peso;
     private String DNI;
     private char sexo;
     private double altura;
@@ -27,7 +27,7 @@ public class Persona {
      * definicion de un constructor por defecto
      */
     public Persona() {
-        this("", 0, sexo_Def, 0, 0);
+        this("", 0, sexo_Def, 0.0, 0);
     }
 
     /**
@@ -37,7 +37,7 @@ public class Persona {
      * @param sexo
      */
     public Persona(String nombre, int edad, char sexo) {
-        this(nombre, edad, sexo, 60, 1.78);
+        this(nombre, edad, sexo, 60.0, 1.78);
     }
 
     /**
@@ -49,7 +49,7 @@ public class Persona {
      * @param altura
      */
 
-    public Persona(String nombre, int edad, char sexo, double peso, double altura) {
+    public Persona(String nombre, int edad, char sexo, Double peso, double altura) {
         this.nombre = nombre;
         this.edad = edad;
         this.peso = peso;
